@@ -26,6 +26,10 @@ class ViewController: UIViewController {
     
     @IBAction func searchOnValueChanged(_ sender: Any) {
         print(searchTextField.text)
+        filteredMenus = menus.filter({ item in
+            item.lowercased().contains(searchTextField.text?.lowercased() ?? "")
+        })
+        menuTableView.reloadData()
     }
 }
 
