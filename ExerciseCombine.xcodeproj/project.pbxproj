@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F80051DC28D4688500E481DF /* ExerciseCombineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80051DB28D4688500E481DF /* ExerciseCombineTests.swift */; };
+		F80051E228D4688B00E481DF /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80051D028D465EC00E481DF /* NetworkService.swift */; };
+		F80051E428D46A3800E481DF /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80051E328D46A3800E481DF /* WeatherModel.swift */; };
+		F80051E628D80BDB00E481DF /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80051E528D80BDB00E481DF /* WeatherViewModel.swift */; };
 		F85400F328BC6FF8007851BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85400F228BC6FF8007851BC /* AppDelegate.swift */; };
 		F85400F528BC6FF8007851BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85400F428BC6FF8007851BC /* SceneDelegate.swift */; };
 		F85400F728BC6FF8007851BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85400F628BC6FF8007851BC /* ViewController.swift */; };
@@ -16,7 +20,22 @@
 		F854010728BC7246007851BC /* AvaliableMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F854010628BC7246007851BC /* AvaliableMenu.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F80051DD28D4688500E481DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F85400E728BC6FF8007851BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F85400EE28BC6FF8007851BC;
+			remoteInfo = ExerciseCombine;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		F80051D028D465EC00E481DF /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		F80051D928D4688500E481DF /* ExerciseCombineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExerciseCombineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F80051DB28D4688500E481DF /* ExerciseCombineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCombineTests.swift; sourceTree = "<group>"; };
+		F80051E328D46A3800E481DF /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		F80051E528D80BDB00E481DF /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		F85400EF28BC6FF8007851BC /* ExerciseCombine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExerciseCombine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F85400F228BC6FF8007851BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F85400F428BC6FF8007851BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,6 +48,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F80051D628D4688500E481DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F85400EC28BC6FF8007851BC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -39,10 +65,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F80051DA28D4688500E481DF /* ExerciseCombineTests */ = {
+			isa = PBXGroup;
+			children = (
+				F80051D028D465EC00E481DF /* NetworkService.swift */,
+				F80051E328D46A3800E481DF /* WeatherModel.swift */,
+				F80051E528D80BDB00E481DF /* WeatherViewModel.swift */,
+				F80051DB28D4688500E481DF /* ExerciseCombineTests.swift */,
+			);
+			path = ExerciseCombineTests;
+			sourceTree = "<group>";
+		};
 		F85400E628BC6FF8007851BC = {
 			isa = PBXGroup;
 			children = (
 				F85400F128BC6FF8007851BC /* ExerciseCombine */,
+				F80051DA28D4688500E481DF /* ExerciseCombineTests */,
 				F85400F028BC6FF8007851BC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				F85400EF28BC6FF8007851BC /* ExerciseCombine.app */,
+				F80051D928D4688500E481DF /* ExerciseCombineTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +112,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F80051D828D4688500E481DF /* ExerciseCombineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F80051DF28D4688500E481DF /* Build configuration list for PBXNativeTarget "ExerciseCombineTests" */;
+			buildPhases = (
+				F80051D528D4688500E481DF /* Sources */,
+				F80051D628D4688500E481DF /* Frameworks */,
+				F80051D728D4688500E481DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F80051DE28D4688500E481DF /* PBXTargetDependency */,
+			);
+			name = ExerciseCombineTests;
+			productName = ExerciseCombineTests;
+			productReference = F80051D928D4688500E481DF /* ExerciseCombineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F85400EE28BC6FF8007851BC /* ExerciseCombine */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F854010328BC6FFB007851BC /* Build configuration list for PBXNativeTarget "ExerciseCombine" */;
@@ -100,6 +157,10 @@
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					F80051D828D4688500E481DF = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = F85400EE28BC6FF8007851BC;
+					};
 					F85400EE28BC6FF8007851BC = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -119,11 +180,19 @@
 			projectRoot = "";
 			targets = (
 				F85400EE28BC6FF8007851BC /* ExerciseCombine */,
+				F80051D828D4688500E481DF /* ExerciseCombineTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F80051D728D4688500E481DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F85400ED28BC6FF8007851BC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,6 +206,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F80051D528D4688500E481DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F80051DC28D4688500E481DF /* ExerciseCombineTests.swift in Sources */,
+				F80051E628D80BDB00E481DF /* WeatherViewModel.swift in Sources */,
+				F80051E428D46A3800E481DF /* WeatherModel.swift in Sources */,
+				F80051E228D4688B00E481DF /* NetworkService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F85400EB28BC6FF8007851BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -149,6 +229,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F80051DE28D4688500E481DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F85400EE28BC6FF8007851BC /* ExerciseCombine */;
+			targetProxy = F80051DD28D4688500E481DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F85400F828BC6FF8007851BC /* Main.storyboard */ = {
@@ -170,6 +258,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F80051E028D4688500E481DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.athoya.ExerciseCombineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExerciseCombine.app/ExerciseCombine";
+			};
+			name = Debug;
+		};
+		F80051E128D4688500E481DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.athoya.ExerciseCombineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExerciseCombine.app/ExerciseCombine";
+			};
+			name = Release;
+		};
 		F854010128BC6FFB007851BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -343,6 +465,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F80051DF28D4688500E481DF /* Build configuration list for PBXNativeTarget "ExerciseCombineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F80051E028D4688500E481DF /* Debug */,
+				F80051E128D4688500E481DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F85400EA28BC6FF8007851BC /* Build configuration list for PBXProject "ExerciseCombine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

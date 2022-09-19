@@ -29,14 +29,14 @@ class ViewController: UIViewController {
         
         menuTableView.delegate = self
         menuTableView.dataSource = self
-        
-        // 3. Kasih subscription dan behaviour kalo ada data berubah gimana
-        //        searchText.sink { value in
-        //            self.filteredMenus = self.menus.filter({ item in
-        //                item.lowercased().contains(self.searchTextField.text?.lowercased() ?? "")
-        //            })
-        //            self.menuTableView.reloadData()
-        //        }.store(in: &subsciprions)
+//
+//         3. Kasih subscription dan behaviour kalo ada data berubah gimana
+//                searchText.sink { value in
+//                    self.filteredMenus = self.menus.filter({ item in
+//                        item.lowercased().contains(self.searchTextField.text?.lowercased() ?? "")
+//                    })
+//                    self.menuTableView.reloadData()
+//                }.store(in: &subsciprions)
         
         // 5. Coba operasi operasi data stream
         searchText
